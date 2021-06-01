@@ -1,0 +1,17 @@
+<style>
+
+</style>
+<h2>Странные хоби </h2>
+<ul >
+<li *ngFor="let item of MyItems" class="Mystyle">
+
+     {{item.name}}
+     
+
+     <p >{{item.opisan}}</p>
+     <img *ngFor="let item1 of MyItems[item.id].imeges" class="Saiz" src="{{item1}}">
+     
+    </li>
+
+
+</ul>
